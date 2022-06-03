@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hour{
+    font-size: small;
+    color: #3f3f3f;
+    text-align: end;
+}
+
+.Card-Tasks {
+        width: 20vw;
+        height: 30vh;
+        background: #00B4DB;
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+        background: linear-gradient(to right, #0083B0, #00B4DB);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12%;
+        cursor: pointer;
+        overflow: hidden;
+}
+
+
+.card-title{
+    font-size: x-large;
+}
+
+.title-nav{
+    text-align: center;
+    font-size: xxx-large;
+    color: #fff;
+    margin-top: 0px;
+}
+
+body{
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+#app{
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.icon-nav{
+    width: 88px;
+}
+
+
+.light-blue.darken-4{
+    height: 100px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.row{
+    margin-left: -15vw;
+}
+
+.btn{
+    margin: 4px;
+}
+
+.btN {
+    background-color: #0083B0;
+    width: 5vw;
+    height: 5vh;
+    margin: 20px;
+    border: none;
+    border-radius: 20%;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+
+.btN:hover{
+    background-color: #023547;
+    box-shadow: 2px 2px 2px 2px #161616;
+}
+
+.btn:hover{
+    background-color: #01202b;
+    box-shadow: 2px 2px 2px 2px #5c5c5c;
+}
+
+@media (max-width: 600px) {
+    #app{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Card-Tasks{
+        width: 47vw;
+        height: 25vh;
+    }
+
+    .card{
+        width: 87vw;
+    }
+
+    .row{
+       margin-left: 0;
+       display: flex;
+       flex-direction: column; 
+    }
+
+    #wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .btN{
+        width: 12vw;
+        height: 6vh;
+    }
+  }
+
